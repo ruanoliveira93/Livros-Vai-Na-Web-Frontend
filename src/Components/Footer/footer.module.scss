@@ -1,0 +1,110 @@
+.containerFooter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    background-color: #005695;
+    width: 100%;
+    height: 188px;
+
+    .contatos {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        height: 120px;
+
+        .telefoneContato {
+            margin-left: 50px;
+
+            p {
+                font-size: 22px;
+                font-weight: 500px;
+                color: white;
+            }
+        }
+
+        .navbar_redesSociais {
+            margin-right: 50px;
+
+            .navbar_lista {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 20px;
+
+                li a i {
+                    font-size: 35px;
+                    color: white;
+                }
+            }
+        }
+    }
+
+    .direitosReservados {
+        width: 100%;
+        height: 68px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: black;
+
+        p {
+            color: white;
+            font-size: 15px;
+            font-weight: 700;
+        }
+    }
+}
+
+//   Media Query Footer
+@media (max-width: 480px) {
+    .containerFooter {
+        flex-direction: column;
+        justify-content: space-evenly;
+
+        .contatos {
+            flex-direction: column;
+            justify-content: center;
+            gap: 10px;
+
+            .telefoneContato {
+                margin: 0 auto;
+            }
+
+            .navbar_redesSociais {
+                margin: 0 auto;
+            }
+        }
+
+    }
+}
+
+@media (max-width: 432px) {
+    .containerFooter {
+        flex-direction: column;
+        justify-content: space-evenly;
+
+        .contatos {
+            flex-direction: column;
+            justify-content: center;
+            gap: 10px;
+
+            .telefoneContato {
+                margin: 0 auto;
+            }
+
+            .navbar_redesSociais {
+                margin: 0 auto;
+            }
+        }
+
+        .direitosReservados {
+
+            p {
+                text-align: center;
+                width: 65%;
+            }
+        }
+    }
+}

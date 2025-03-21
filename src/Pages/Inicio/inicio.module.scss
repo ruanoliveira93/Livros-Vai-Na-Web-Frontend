@@ -1,0 +1,317 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Satisfy&family=Updock&display=swap');
+
+main {
+    display: block;
+    width: 100%;
+    min-height: 200vh;
+
+    .secaoInicio {
+        position: relative;
+        height: 100vh;
+
+        img {
+            width: 100%;
+            height: 100vh;
+            position: absolute;
+        }
+
+        h2 {
+            width: 30%;
+            color: white;
+            top: 50%;
+            left: 4%;
+            font-size: 48px;
+            position: absolute;
+        }
+    }
+
+    .insentivoEducacao {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: start;
+        width: 100%;
+        min-height: 100vh;
+        flex-direction: column;
+
+        h2 {
+            color: #005695;
+            font-size: 40px;
+            font-weight: 500;
+            font-family: 'Inter', sans-serif;
+            padding-left: 80px;
+        }
+
+        .destaque {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            width: 100%;
+            flex-wrap: wrap;
+
+            div {
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                flex-direction: column;
+                border-radius: 16px;
+                width: 320px;
+                height: 358px;
+                padding: 18px;
+                text-align: center;
+                background-color: #b3cddf;
+
+                img {
+                    width: 120px;
+                }
+
+                p {
+                    font-size: 19pt;
+                    font-family: 'Inter', sans-serif;
+                }
+            }
+        }
+    }
+
+}
+
+// Media Query Home
+@media (max-width: 1834px) {
+    main {
+        min-height: 190vh;
+
+        .secaoInicio {
+            height: 90vh;
+
+            h2 {
+                width: 600px;
+                scale: 0.8;
+                left: 1%;
+                top: 45%;
+            }
+
+            img {
+                height: 90vh;
+            }
+        }
+    }
+}
+
+@media (max-width: 1079px) {
+    main {
+        min-height: 180vh;
+
+        .secaoInicio {
+            height: 80vh;
+
+            h2 {
+                top: 40%;
+                scale: 0.8;
+                width: 600px;
+                left: 2%;
+            }
+
+            img {
+                height: 80vh;
+            }
+        }
+    }
+}
+
+@media (max-width: 789px) {
+    main .secaoInicio {
+        height: 60vh;
+
+        h2 {
+            top: 35%;
+            scale: 0.7;
+            width: 500px;
+            left: -1%;
+        }
+
+        img {
+            height: 60vh;
+        }
+    }
+}
+
+@media (max-width: 527px) {
+    main .secaoInicio {
+        height: 35vh;
+
+        h2 {
+            scale: 0.5;
+            width: 500px;
+            top: 24%;
+            left: -15%;
+        }
+
+        img {
+            height: 35vh;
+        }
+    }
+}
+
+@media (max-width: 393px) {
+    main .secaoInicio {
+        height: 30vh;
+
+        h2 {
+            scale: 0.4;
+            width: 500px;
+            top: 15%;
+            left: -30%;
+        }
+
+        img {
+            height: 30vh;
+        }
+    }
+}
+
+@media (max-width: 1559px) and (min-width: 1284px) {
+    main {
+        .insentivoEducacao {
+            h2 {
+                padding-left: 40px;
+            }
+        }
+    }
+}
+
+@media (max-width: 1283px) and (min-width: 964px) {
+    main {
+        .insentivoEducacao {
+            justify-content: end;
+
+            h2 {
+                padding-left: 50px;
+            }
+
+            .destaque {
+                height: 80vh;
+            }
+        }
+    }
+}
+
+@media (max-width: 963px) and (min-width: 809px) {
+    main {
+        .insentivoEducacao {
+
+            .destaque {
+                height: 80vh;
+            }
+        }
+    }
+}
+
+@media (max-width: 808px) and (min-width: 790px) {
+    main {
+        .insentivoEducacao {
+            justify-content: space-evenly;
+            padding-top: 40px;
+
+            h2 {
+                padding-left: 40px;
+            }
+
+            .destaque {
+                height: 80vh;
+            }
+        }
+    }
+}
+
+@media (max-width: 789px) and (min-width: 644px) {
+    main {
+        min-height: 160vh;
+
+        .insentivoEducacao {
+            h2 {
+                padding-left: 40px;
+            }
+
+            .destaque {
+                height: 80vh;
+            }
+        }
+    }
+}
+
+@media (max-width: 643px) and (min-width: 481px) {
+    main {
+        .insentivoEducacao {
+            min-height: 170vh;
+            justify-content: center;
+
+            h2 {
+                padding: 0;
+                margin: 0 auto;
+            }
+
+            .destaque {
+                height: 160vh;
+            }
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    main {
+        .insentivoEducacao {
+            padding-top: 30px;
+
+            h2 {
+                font-size: 32px;
+                padding: 0;
+                margin: 0 auto;
+            }
+
+            .destaque {
+                div {
+                    scale: 0.8;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 432px) and (min-width: 406px) {
+    main {
+        .insentivoEducacao {
+            padding-top: 25px;
+
+            h2 {
+                font-size: 30px;
+                padding: 0;
+                margin: 0 auto;
+            }
+
+            .destaque {
+                div {
+                    scale: 0.8;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 405px) {
+    main {
+        .insentivoEducacao {
+            padding-top: 40px;
+
+            h2 {
+                font-size: 28px;
+                padding: 0;
+                margin: 0 auto;
+            }
+
+            .destaque {
+                div {
+                    scale: 0.7;
+                }
+            }
+        }
+    }
+}
