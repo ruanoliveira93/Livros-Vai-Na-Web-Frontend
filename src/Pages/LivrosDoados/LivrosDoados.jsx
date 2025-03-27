@@ -11,7 +11,7 @@ export default function LivrosDoados() {
   // Função para buscar livros da API
   const buscarLivros = async () => {
     try {
-      const response = await axios.get("https://livros-api-vainaweb.onrender.com/livros");
+      const response = await axios.get("https://api-livros-vainaweb-vp00.onrender.com/livros");
       console.log("Livros carregados com sucesso!", response.data);
 
       let itens = response.data;
