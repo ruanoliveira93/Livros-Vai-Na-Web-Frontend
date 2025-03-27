@@ -45,7 +45,7 @@
     width: 80%;
     min-height: 0vh;
     margin: 0px 0px;
-    padding: 100px 0px;
+    padding: 50px 0px;
 
     .livro {
       display: flex;
@@ -88,7 +88,7 @@
 @media (max-width: 808px) and (min-width: 481px) {
   .containerLivros {
     .livros {
-      padding-top: 80px;
+      padding: 100px 0px;
       justify-content: center;
 
       .livro {

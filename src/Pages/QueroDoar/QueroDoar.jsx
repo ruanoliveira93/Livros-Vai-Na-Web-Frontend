@@ -7,28 +7,27 @@ export default function QueroDoar() {
   const [titulo, setTitulo] = useState("");
   const [categoria, setCategoria] = useState("");
   const [autor, setAutor] = useState("");
-  const [imagem_url, setImagemUrl] = useState(""); // Corrigido para bater com o backend
+  const [imagem_url, setImagemUrl] = useState("");
 
   const EnviarDados = async (e) => {
     e.preventDefault();
 
     if (!titulo || !categoria || !autor || !imagem_url) {
       alert("Todos os campos são obrigatórios!");
-      return; // Adicionado para evitar envio com campos vazios
+      return;
     }
 
     try {
-      const response = await axios.post("http://127.0.0.1:5000/doar", {
+      const response = await axios.post("https://livros-api-vainaweb.onrender.com/doar", {
         titulo,
         categoria,
         autor,
-        imagem_url, // Enviando no formato correto
+        imagem_url,
       });
 
       console.log("Dados enviados com sucesso!", response.data);
       alert("Livro cadastrado com sucesso!");
       
-      // Limpar os campos após o envio bem-sucedido
       setTitulo("");
       setCategoria("");
       setAutor("");
