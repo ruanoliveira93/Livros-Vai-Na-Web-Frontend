@@ -5,7 +5,7 @@ import s from "./livrosdoados.module.scss";
 
 export default function LivrosDoados() {
   const [livros, setLivros] = useState([]);
-  const [livrosFiltrados, setLivrosFiltrados] = useState([]); // Estado para os livros filtrados
+  const [livrosFiltrados, setLivrosFiltrados] = useState([]);
   const [erro, setErro] = useState(null);
 
   // Função para buscar livros da API
@@ -18,7 +18,7 @@ export default function LivrosDoados() {
       itens.sort((a, b) => a.titulo.localeCompare(b.titulo));
 
       setLivros(itens);
-      setLivrosFiltrados(itens); // Inicialmente, os livros filtrados são iguais aos originais
+      setLivrosFiltrados(itens);
       setErro(null);
     } catch (err) {
       console.error("Erro ao carregar livros:", err);
