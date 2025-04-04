@@ -1,0 +1,36 @@
+.formSearch {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 2rem;
+    border: 1px solid #005695;
+    border-radius: 16px;
+    background-color: #005695;
+  
+    input {
+      height: 2rem;
+      border-radius: 16px;
+      text-indent: 20px;
+      border: none;
+      background: none;
+      color: white;
+      outline: none;
+  
+      &::placeholder {
+        color: rgba(255, 255, 255, 0.5);
+      }
+    }
+  
+    button {
+      border: none;
+      width: 2.5rem;
+      height: 2rem;
+      border-radius: 0 16px 16px 0;
+      background-color: transparent;
+      cursor: pointer;
+  
+      img {
+        width: 1rem;
+      }
+    }
+  }
