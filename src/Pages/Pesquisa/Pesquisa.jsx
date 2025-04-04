@@ -42,7 +42,7 @@ export default function Pesquisa() {
 
   return (
     <section className={s.container}>
-      <h2>{`Resultado da pesquisa: ${location.state.texto}`}</h2>
+      <h2>{`Resultado da pesquisa: "${location.state.texto}"`}</h2>
       <p>{`Total de livros: (${filtrados.length})`}</p>
       <section className={s.livros}>
         {filtrados.length > 0 ? (
