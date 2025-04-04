@@ -5,8 +5,7 @@
   height: 2rem;
   border: 1px solid #005695;
   border-radius: 16px;
-  background-color: #005695;
-
+  
   input {
     height: 2rem;
     border-radius: 16px;
@@ -20,7 +19,7 @@
       color: rgba(255, 255, 255, 0.5);
     }
   }
-
+  
   button {
     border: none;
     width: 2.5rem;
@@ -32,5 +31,11 @@
     img {
       width: 1rem;
     }
+  }
+}
+
+@media (max-width: 1040px) {
+  .formSearch {
+    display: none;
   }
 }
