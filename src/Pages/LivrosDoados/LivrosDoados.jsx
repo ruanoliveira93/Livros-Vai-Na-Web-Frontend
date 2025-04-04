@@ -11,7 +11,7 @@ export default function LivrosDoados() {
   // Função para buscar livros da API
   const buscarLivros = async () => {
     try {
-      const response = await axios.get("http://127.0.0.1:5000/livros");
+      const response = await axios.get("https://api-livros-vainaweb-vp00.onrender.com/livros");
       console.log(
         `Livros carregados com sucesso! (Status: ${response.status})`
       );
@@ -53,7 +53,7 @@ export default function LivrosDoados() {
   // Função para deletar livro por query params
   const deleteLivros = async (id) => {
     try {
-        await axios.delete(`http://127.0.0.1:5000/livros?id=${id}`)
+        await axios.delete(`https://api-livros-vainaweb-vp00.onrender.com/livros?id=${id}`)
         alert("Livro deletado com sucesso!")
         buscarLivros()
     } catch (err) {
