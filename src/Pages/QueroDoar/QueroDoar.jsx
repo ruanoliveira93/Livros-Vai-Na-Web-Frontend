@@ -18,7 +18,7 @@ export default function QueroDoar() {
     }
 
     try {
-      const response = await axios.post("http://127.0.0.1:5000/doar", {
+      const response = await axios.post("http://54.191.253.12/doar", {
         titulo,
         categoria,
         autor,
